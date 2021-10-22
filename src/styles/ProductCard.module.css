@@ -1,0 +1,90 @@
+.card {
+  border: 1px solid #d6d9dc;
+  height: 400px;
+  background-color: white;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  /* flex-wrap: wrap; */
+}
+
+.img_container {
+  height: 70%;
+  min-height: 70%;
+  max-height: 70%;
+}
+.card:hover .img_overlay {
+  display: flex;
+}
+
+.img_overlay {
+  height: 70%;
+  min-height: 70%;
+  max-height: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(103, 187, 167, 0.5);
+  min-width: 100%;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_container img {
+  height: 100%;
+  width: 100%;
+}
+
+.text_container {
+  height: 30%;
+  min-height: 30%;
+  max-height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+}
+.card_title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card_secondry_title {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color: gray;
+  padding-top: 10px;
+}
+.card_number {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #67bba7;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card_btn {
+  padding: 10px;
+  border-radius: 2px;
+  min-width: 60%;
+  font-weight: bolder;
+  color: #67bba7;
+}
+.card_btn:hover,
+.card_btn:active {
+  border: 2px solid white !important;
+}
+
+.card_bt_white {
+  background-color: "white";
+  color: white;
+}
+.card_bt_white.card_btn:hover,
+.card_bt_white.card_btn:active {
+  border: 2px solid #67bba7 !important;
+}

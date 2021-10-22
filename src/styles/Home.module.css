@@ -1,0 +1,18 @@
+.main_container {
+  padding: 2rem;
+}
+
+.compareTable {
+  width: 100%;
+  min-width: 100%;
+  background-color: white;
+  margin: 40px auto;
+  border: 1px solid #ebebeb;
+  color: #616365;
+}
+.compareTable td {
+  width: 20%;
+  min-width: 20%;
+  padding: 20px;
+  border-bottom: 1px solid #ebebeb;
+}

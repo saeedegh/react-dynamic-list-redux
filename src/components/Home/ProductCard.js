@@ -22,7 +22,7 @@ function ProductCard({ item }) {
       <Col xs={24} sm={12} md={6}>
         <Card>
           <ImageContainer>
-            <img src={logo}></img>
+            <img src={item.image}></img>
           </ImageContainer>
           <TextContainer>
             <MainInfo>
@@ -52,6 +52,14 @@ const Card = styled.div`
 const ImageContainer = styled.div`
   width: 100%;
   min-height: 15rem;
+  max-height: 15rem;
+  height: 15rem;
+  img {
+   max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+}
+  }
 `;
 
 const TextContainer = styled.div`

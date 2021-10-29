@@ -19,9 +19,10 @@ function ProductCard({ item }) {
   // };
   return (
     <>
-      <Col xs={24} sm={12} md={6}>
+      <Col xs={24} sm={12} md={8} lg={6}>
         <Card>
           <ImageContainer>
+            <div className="img-cover"></div>
             <img src={item.image}></img>
           </ImageContainer>
           <TextContainer>
@@ -50,10 +51,27 @@ const Card = styled.div`
 `;
 
 const ImageContainer = styled.div`
+  position: relative;
   width: 100%;
   min-height: 15rem;
   max-height: 15rem;
   height: 15rem;
+  
+  .img-cover{
+    display:none;
+    background-color:#00800075;
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+  }
+
+  &:hover{
+    .img-cover{
+      display:block;
+    }
+  }
   img {
    max-width: 100%;
     min-width: 100%;
